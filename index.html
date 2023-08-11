@@ -15,66 +15,155 @@
 
 <body>
 
-    <header>
+    <div id="top" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="index.html">
+                    <img class="d-block img-fluid" id="icon-fractal" src="imgs/Fractal-F2x.png" alt="" width="30px">
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <h1 class="text-center" id="hero">Fractal</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <h1 class="text-center" id="hero">Fractal</h1>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+        </a>
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="help.html">Help</a>
+        <a href="services.html">Services</a>
+    </div>
 
 
-        <div class="hero">
-            <h1>Fractal</h1>
+
+    <div id="main">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <span id="sidebar" style="font-size: 40px; cursor: pointer;" onclick="openNav()">&#9776</span>
+                </div>
+            </div>
         </div>
 
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="index.html"><img src="imgs/Fractal-F2x.png" alt="" width="20px"></a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="help.html">Help</a>
+            <a href="services.html">Services</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
         </div>
-        <nav class="nav" id="nav">
-            <ul class="menu">
-                <a href="index.html">Home</a>
-                <a href="details.html">Details</a>
-                <a href="about.html">About</a>
-                <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a></li>
-            </ul>
-        </nav>
-    </header>
+
+        <video autoplay muted loop id="video-hero" src="imgs/video-hero.mp4" type="video/mp4" width="100%">
+        </video>
 
 
-    <div class="main"></div>
 
-    <div class="description">
-        <h3>
+        <h3 class="text-center">
             Spring 2022 Collection Available now.
         </h3>
-    </div>
 
 
-    <div class="showcase-gallery">
-        <div class="showcase-item">
-            <img src="imgs/fabio-alves-MNzyXXfnnCg-unsplash.jpg" alt="Photo by Fabio Alves on Unsplash.com">
-            <h4 class="showcase-title">New Hats</h4>
+        <div id="gallery" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="gallery-img">
+                        <a href="products.html">
+                            <img id="img-gallery" class="mx-auto d-block img-fluid" src="imgs/touque.png" alt=""
+                                width="200">
+                            <div id="text-hidden" class="text-center">Explore Hats</div>
+                        </a>
+                        <!-- <h4 id="text-gallery" class="text-center">New Hats</h4> -->
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="products.html">
+                        <img id="img-gallery" class="mx-auto d-block img-fluid" src="imgs/nike-vapormax.png" alt="">
+                        <div id="text-hidden" class="text-center">Explore Shoes</div>
+                    </a>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="products.html">
+                        <img id="img-gallery" class="mx-auto d-block img-fluid"
+                            src="imgs/artem-bondarchuk-XPBYi4K8vFI-unsplash.jpg" alt="">
+                        <div id="text-hidden" class="text-center">Explore Featured Items</div>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="showcase-item">
-            <img src="imgs/mike-von-wJ-yzQDAMXs-unsplash.jpg" alt="Photo by Mike Von on Unsplash.com">
-            <h4 class="showcase-title">Shoes</h4>
 
+        <div id="gallery-jewlery" class="container-fluid">
+            <div class="row">
+                <h4 class="text-center">New jewlery!</h4>
+                <div class="col-sm-6">
+                    <img class="mx-auto d-block img-fluid" src="imgs/sabrianna-kuko1hX_kXw-unsplash.jpg"
+                        alt="Photo by Sabrianna Kuko on Unsplash.com" width="400px">
+                </div>
+                <div class="col-sm-6">
+                    <img class="mx-auto d-block img-fluid" src="imgs/mariano-rivas-ZYet8yoepik-unsplash.jpg"
+                        alt="Photo by Mariano Rivas on Unsplash.com" width="400px">
+                </div>
+            </div>
         </div>
 
-        <div class="showcase-item">
-            <img src="imgs/mike-von-xjCRUgHcqUo-unsplash.jpg" alt="Photo by Mike Von on Unsplash.com">
-            <h4 class="showcase-title">Pants</h4>
+        <video id="video-home" autoplay loop muted src="imgs/video-home.mp4" width="100%"></video>
 
+        <img id="img-shoe" class="mx-auto d-block img-fluid" src="imgs/jordan-1.png"
+            alt="Photo by Artem Bondarchuk on Unsplash" width="400px">
+
+        <div class="container">
+            <a href="products.html">
+                <img id="img-footer" class="mx-auto d-block img-fluid" src="imgs/mike-von-bWUOx0SaSAk-unsplash.jpg"
+                    alt="Photo by Mike Von on Unsplash" width="100%">
+            </a>
         </div>
 
+        <a href="products.html">
+            <h2 class="text-center">Explore</h2>
+        </a>
 
-        <h4 class="product-title">New jewlery!</h4>
 
-        <div class="product-item">
-            <img src="imgs/sabrianna-kuko1hX_kXw-unsplash.jpg" alt="Photo by Sabrianna Kuko on Unsplash.com">
+        <div id="bottom-nav" class="container-fluid">
+            <hr>
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <p>Help</p>
+                    <p>FAQ'S</p>
+                    <p>Stores</p>
+                    <a href="#"><button id="btn-bottom-nav" type="button" class="btn btn-dark">Click Here</button></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <p>Services</p>
+                    <p>Fractal App</p>
+                    <a href="services.html"><button id="btn-bottom-nav" type="button" class="btn btn-dark">Click Here</button></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <p>Follow Us</p>
+                    <div class="icons">
+                        <a id="icon" href="#" class="fa fa-facebook"></a>
+                        <a id="icon" href="#" class="fa fa-twitter"></a>
+                        <a id="icon" href="#" class="fa fa-instagram"></a>
+                        <a id="icon" href="#" class="fa fa-pinterest"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
-        <div class="product-item">
-            <img src="imgs/mariano-rivas-ZYet8yoepik-unsplash.jpg" alt="Photo by Mariano Rivas on Unsplash.com">
+
+        <div class="footer">
+            <h4>&copy; 2022 Fractal Inc.
+                <button class="btn btn-dark text-center" id="btn-dark-mode" onclick="darkMode()">Dark Mode</button>
         </div>
 
-    </div>
-
-    <div class="footer">
-        <h4>&copy; 2022 Fractal Inc.
     </div>
 
 </body>
