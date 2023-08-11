@@ -489,6 +489,12 @@ header {
     width: 500px; 
 }
 
+@media screen and (max-width: 490px) {
+    #description-about {
+        width: 80vw;
+    }
+}
+
 #services-container {
     width: 50vw;
 }
